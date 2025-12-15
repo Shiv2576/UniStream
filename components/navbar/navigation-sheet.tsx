@@ -20,7 +20,7 @@ export const NavigationSheet = () => {
           <Button variant="outline" className="w-full sm:hidden">
             Sign In
           </Button>
-          <Button className="w-full xs:hidden">Get Started</Button>
+          <Button className="w-full sm:hidden">Get Started</Button>
         </div>
       </SheetContent>
     </Sheet>

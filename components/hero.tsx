@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="md:mt-6 flex items-center justify-center">
         <div className="text-center max-w-2xl">
           <Badge className="bg-primary rounded-full py-1 border-none">
-            v1.0.0 is available now! 🚀
+            📊 v1.0.0 is available now!
           </Badge>
           <h1 className="mt-6 max-w-[28ch] text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold !leading-[1.15] tracking-tighter bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent">
             TWAP & SPOT Oracle

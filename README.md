@@ -1,67 +1,121 @@
-# PureLanding - Beautiful Shadcn UI Landing Page
+# UniStream 
 
-A modern, responsive landing page template built with Next.js, Tailwind CSS, and Shadcn UI, and Shadcn UI Blocks.
+**Real-time crypto pricing intelligence for serious DeFi traders.**  
+Stream low-latency TWAP, VWAP, slippage alerts, and on-chain signals directly into your trading infrastructure — over secure WebSocket connections.
 
-## Demo
 
-[Live Demo](https://pure-landing-shadcnui-template.vercel.app/)
+---
 
-## Preview
+##  What Is UniStream?
 
-![Preview](./public/preview.png)
+UniStream delivers **institutional-grade market data** for decentralized finance:
 
-## Features
+- ✅ **Real-time TWAP & VWAP** over configurable windows (5m to 24h)  
+- ✅ **Slippage deviation alerts** (`|Spot − TWAP| / TWAP`)  
+- ✅ **MEV-risk indicators** and anomaly detection  
+- ✅ **WebSocket-first architecture** with sub-500ms latency  
+- ✅ Full support for **Ethereum, Arbitrum, Base**, and major Uniswap V3 pools  
 
-- 🎨 Modern and clean design
-- 📱 Fully responsive layout
-- 🎯 Built with Next.js 15
-- 💅 Styled with Tailwind CSS `3.4` & `4.0`
-- 🧩 Built with [Shadcn UI](https://ui.shadcn.com) and [Shadcn UI Blocks](https://shadcnui-blocks.com)
-- 🌙 Dark mode support
+Built for **trading bots, quant researchers, and DeFi power users** who demand precision, speed, and reliability.
 
-## Getting Started
+---
 
-1. Clone the repository:
+## 🚀 Features
+
+- 📊 **Time-Weighted & Volume-Weighted Averages**  
+  Configurable lookback windows with exponential decay weighting.
+- ⚠️ **Slippage Monitoring**  
+  Real-time deviation alerts with customizable thresholds.
+- 🔌 **WebSocket API**  
+  Stable, reconnect-safe streams with dynamic window switching via JSON control frames.
+- 🌐 **Multi-Chain Support**  
+  Ethereum, Arbitrum, and Base — with new chains added monthly.
+- 🌙 **Dark-Mode Optimized UI**  
+  Clean, minimal dashboard built with **Next.js 15**, **Tailwind CSS**.
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the repo
 
 ```bash
-git clone https://github.com/akash3444/pure-landing-shadcnui-template.git
-cd pure-landing-shadcnui-template
+git clone https://github.com/your-username/unistream.git
+cd unistream
 ```
 
-2. To use Tailwind CSS v4.0:
-
-- Ensure you’re using Node.js 20 or higher.
-- Switch to the tailwind-v4 branch:
-
-```bash
-git checkout tailwind-v4
-```
-
-3. Install dependencies:
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-4. Start the development server:
+### 3. Start the dev server
 
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000)
 
-## Customization
+> 💡 The frontend connects to a WebSocket backend (e.g., `wss://api.unistream.example/ws`).  
+> Update the URL in `hooks/priceSocket.ts` to point to your server.
 
-1. Replace the placeholder images with your own content.
-2. Modify the text and styles in the components to match your brand and messaging.
-3. Add your own features and sections as needed.
+---
 
-## Why this template?
+## 🧪 Customization
 
-This project is a base template for a landing page. It is built with Next.js, Tailwind CSS, Shadcn UI, and Shadcn UI Blocks. It is a great starting point for a landing page. You can customized the content and media files as per your needs. It is not intended to be a complete solution for a landing page. It is intended to be a starting point for a landing page.
+- **Update branding**: Replace logos, colors, and copy in `/components/layout`.
+- **Add new pools**: Extend the WebSocket handler to support additional Uniswap pairs.
+- **Enhance signals**: Plug in your own anomaly detection or sentiment models.
+- **Self-host**: Deploy the backend as a Go microservice alongside this frontend.
 
-## Contributing
+---
 
-If you have any suggestions or improvements, please create an issue or submit a pull request.
-# UniStream
+## 💡 Why UniStream?
+
+Most crypto dashboards show **lagging, aggregated prices**.  
+UniStream gives you the **raw truth** — in real time — so you can:
+
+- Avoid high-slippage executions  
+- Detect MEV opportunities  
+- Backtest strategies with accurate TWAP  
+- Power autonomous trading agents  
+
+This is not a “pretty chart” — it’s **trading infrastructure**.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the DeFi and open-source communities!
+
+1. Fork the repo  
+2. Create your feature branch (`git checkout -b feat/new-pool`)  
+3. Commit your changes (`git commit -m 'Add WBTC/ARB pool'`)  
+4. Push to the branch (`git push origin feat/new-pool`)  
+5. Open a Pull Request
+
+Please ensure your code follows our minimal, resilient philosophy.
+
+---
+
+## 📄 License
+
+MIT © [Your Name / Org]  
+Use freely in personal and commercial projects.
+
+---
+
+> **Built with precision. Designed for restraint.**  
+> — UniStream
+
+---
+
+Let me know if you'd like:
+- A **backend architecture diagram**
+- **API documentation snippet**
+- **Deployment guide for WebSocket server**
+- Integration with your **Disperz** branding
+
+This README positions UniStream as a serious tool — not just another dashboard.

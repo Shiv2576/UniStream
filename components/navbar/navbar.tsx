@@ -46,12 +46,12 @@ const Navbar = () => {
             <ThemeToggle />
           </motion.div>
 
-          <Button className="hidden xs:inline-flex group relative overflow-hidden">
+          <Button className="hidden md:inline-flex group relative overflow-hidden">
             <span className="relative z-10 flex items-center gap-2">
               <Sparkles size={16} />
               Get Started
             </span>
-            <span className="absolute inset-0 bg-gradient-to-r from-primary to-primary/90 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
+            <span className="absolute inset-0 bg-gradient-to-r from-primary to-primary/90 -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
             <ChevronDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
 
